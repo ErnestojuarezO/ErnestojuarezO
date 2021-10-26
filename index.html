@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulario y registro de datos en BD</title>
+</head>
+<body>
+<form  class="form-register" method="POST" action="./validar-informacion.php">    
+    <h4>Formulario y registro de datos en BD</h4>
+    <input class="controls" type="text" name="no" id="no" placeholder="No">
+    <input class="controls" type="text" name="marca" id="marca" placeholder="Ingrese la Marca">
+	<input class="controls" type="text" name="modelo" id="modelo" placeholder="Ingrese el modelo">
+	<select class="controls"  name="color" id="color">
+   <option > Elige un color </option>
+  <option value="Rojo">Rojo</option>
+  <option value="Negro">Negro</option>
+  <option value="Amarillo">Amarillo</option>
+   </select>
+   <input class="controls" type="text" name="precio" id="precio" placeholder="Ingrese el precio">
+   <div>
+   <span class="controls"> tipos de radio</span>
+   <label><input type="checkbox" name="opcion"value="Radio DP"/>Radio DP</label>
+   <label><input type="checkbox" name="opcion"value="Analógica"/>Analógica</label>
+   </div>
+   <select class="controls"  name="alcance" id="alcance">
+   <option > Elige el alcance </option>
+  <option value="1km">1km</option>
+  <option value="5km">5km</option>
+  <option value="10km">10km</option>
+   </select>
+   <input class="controls" type="text" name="linea" id="linea" placeholder="Ingrese la linea">
+   <div>
+   <span class="controls"> Ingrese el Vol del cargador de la batería</span>
+    <input type="radio" id="voltaje" name="voltaje" value="110v/240v"/>110v/240v
+	  <input type="radio" id="voltaje" name="voltaje" value="120v"/>120v
+</div>
+   <input class="controls" type="text" name="canales" id="canales" placeholder="Ingrese la Cantidad de canales">
+   <input class="controls" type="text" name="bateria" id="bateria" placeholder="Ingrese la Capacidad de la batería">
+  
+	<td>
+	<label class="controls" for="imagen">Imagen:</label></td>
+	<td><input class="controls" type="file" name="imagen" style="text-align:center"></input></td>
+	<input  type="submit" name="Enviar"value="Enviar">
+	
+
+</form>
+</body>
+</html>
